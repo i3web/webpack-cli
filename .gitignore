@@ -9,6 +9,7 @@ Desktop.ini
 $RECYCLE.BIN/
 node_modules
 dist
+npm-debug.log
 
 # Windows Installer files
 *.cab
