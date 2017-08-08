@@ -10,3 +10,6 @@ import '../../component/footer/footer';
 if( NODE_ENV === 'production' ){        //判断是否是开发环节
     require('./index.ejs');
 }
+
+const app = 'abc';
+console.log( app );
