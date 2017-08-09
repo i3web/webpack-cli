@@ -2,8 +2,11 @@
 这是用于后端渲染的webpack脚手架，可以生成相应的html和css，你可以这样使用它
 
 > npm clone https://github.com/cwj0130/webpack-cli.git
+
 > cd webpack-cli
+
 > npm i
+
 > npm run dev
 
 如需打包生成相应的文件，请使用
