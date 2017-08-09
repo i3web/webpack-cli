@@ -37,7 +37,6 @@ moduleExport.push( new CleanWebpackPlugin(['dist'], {       //每次打包前清
 
 if( process.env.NODE_ENV === 'production' ){                                //如果是生产环境，就分离出css
     moduleExport.push( new ExtractTextPlugin('[name]/[name].css') );
-    console.log( 'production' )
 }
 
 module.exports = moduleExport;

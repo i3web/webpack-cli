@@ -4,7 +4,9 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
     rules: [{
         test: /\.scss$/,
-        use: process.env.NODE_ENV == 'production' ? ExtractTextPlugin.extract({ fallback: "style-loader", use: ["css-loader?importLoaders=2","postcss-loader","sass-loader"] }) : ['style-loader','css-loader?importLoaders=2',"postcss-loader",'sass-loader']
+        use: process.env.NODE_ENV == 'production'
+             ? ExtractTextPlugin.extract({ fallback: "style-loader", use: ["css-loader?importLoaders=2","postcss-loader","sass-loader"] })
+             : ['style-loader','css-loader?importLoaders=2',"postcss-loader",'sass-loader']
     },{
         test: /\.(png|jpg|gif)$/,
         use: [{
