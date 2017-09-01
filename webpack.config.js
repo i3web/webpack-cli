@@ -1,7 +1,11 @@
+const path = require('path');
+
 module.exports = {
-    entry: require(`./webpack-config/entry.js`),
-    output: require('./webpack-config/output.js'),
-    devServer: require('./webpack-config/devServer.js'),
-    module: require('./webpack-config/module.js'),
-    plugins: require('./webpack-config/plugins.js')
+    context: __dirname,
+    entry: require('./webpack-config/entry'),
+    output: require('./webpack-config/output'),
+    module: require('./webpack-config/module'),
+    plugins: require('./webpack-config/plugins'),
+    devtool: "source-map",
+    devServer: require('./webpack-config/devServer')
 }

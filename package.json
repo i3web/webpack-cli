@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack",
     "webpack-dev-server": "webpack-dev-server",
-    "dev": "set NODE_ENV=development&&webpack-dev-server --color",
-    "build": "set NODE_ENV=production&& webpack -p --color"
+    "dev": "set NODE_ENV=dev&&webpack-dev-server --color",
+    "build": "set NODE_ENV=pro&& webpack -p --color"
   },
   "keywords": [],
   "author": "",
@@ -28,7 +28,7 @@
     "image-webpack-loader": "^3.3.1",
     "node-sass": "^4.5.3",
     "postcss-loader": "^2.0.6",
-    "postcss-sprites": "^4.2.1",
+    "resolve-url-loader": "^2.1.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
     "underscore-template-loader": "^0.8.0",
