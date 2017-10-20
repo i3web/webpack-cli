@@ -2,13 +2,14 @@
 const path = require('path');
 
 let moduleExport = {
+    project: path.resolve(),
     src: path.resolve('./src'),
     dist: path.resolve('./dist'),
     webpackConfig: path.resolve('./webpack-config'),
     pages: path.resolve('./src/pages'),
-    publicSource: path.resolve('./src/public-resource'),
-    component: path.resolve('./src/public-resource/component'),
-    layout: path.resolve('./src/public-resource/layout')
+    publicSource: path.resolve('./src'),
+    component: path.resolve('./src/component'),
+    layout: path.resolve('./src/layout')
 }
 
 module.exports = moduleExport;

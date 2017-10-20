@@ -7,5 +7,8 @@ module.exports = {
     module: require('./webpack-config/module'),
     plugins: require('./webpack-config/plugins'),
     devtool: "source-map",
-    devServer: require('./webpack-config/devServer')
+    devServer: require('./webpack-config/devServer'),
+    externals: {
+        jquery: 'jquery'
+    }
 }
