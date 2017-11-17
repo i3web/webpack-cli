@@ -1,0 +1,17 @@
+.bread{
+    line-height: 58px;
+    font-size: 14px;
+    i{
+        color: $blue;
+        display: inline-block;
+        margin-right: 6px;
+    }
+    a{
+        display: inline-block;
+        margin: 0 4px;
+        color: $l-word;
+        &:last-of-type{
+            color: $blue;
+        }
+    }
+}

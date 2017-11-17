@@ -7,5 +7,5 @@ module.exports = {
               ? 'static/js/[name]-[chunkhash:5].js'
               : 'static/js/[name]-[hash:5].js',
     path: dirPath.dist,
-    publicPath: process.env.NODE_ENV == 'pro' ? 'http://wap.rzstudy.com/' : ''
+    publicPath: process.env.NODE_ENV == 'pro' ? 'http://www.kenxuewang.com/' : ''
 }

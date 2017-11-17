@@ -8,9 +8,14 @@
     <title>重定向</title>
 </head>
 <body>
-    <script>
+    <!-- <script>
         window.location.href = 'webpack-dev-server';
-        </script>
-        <img src="./src/img/nodata.png" alt="">
+    </script> -->
+
+    <ul>
+        <% htmlWebpackPlugin.options.pages.forEach(function(item, index) { %>
+            <li><a href="/<%= item %>.html"> <%= item %> </a></li>
+        <% }) %>
+    </ul>
 </body>
 </html>

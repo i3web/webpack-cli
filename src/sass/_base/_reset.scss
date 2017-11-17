@@ -14,17 +14,11 @@ i{
     font-style: normal;
 }
 html,body{
-    position: relative;
     color: $l-word;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1;
-    width: 640px;
-    min-height: 100vmax;
+    width: 100%;
     font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
-}
-body{
-    padding-bottom: 255px;
-    box-sizing: border-box;
 }
 .clear:after{
     content: '';
@@ -40,5 +34,4 @@ body{
 .container{
     width: 1200px;
     margin: auto;
-    box-sizing: border-box;
 }

@@ -1,7 +1,7 @@
 const path = require('path');
 const dirPath = require('./base/dir-path');
 const os = require('os');
-const host = os.networkInterfaces()["本地连接"][1].address;
+const host = os.networkInterfaces()["WLAN 2"][1].address;
 
 module.exports = {
     proxy: { // proxy URLs to backend development server

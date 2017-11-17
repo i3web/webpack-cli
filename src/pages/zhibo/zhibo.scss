@@ -1,0 +1,76 @@
+@import '../../sass/base.scss';
+@import '../../component/header/header.scss';
+@import '../../component/bread/bread.scss';
+@import '../../component/footer/footer.scss';
+
+/* .filter{
+    .title{
+        background-color: $blue;
+        color: white;
+    }
+    ul{
+        background-color: $content-bg;
+    }
+} */
+
+.banner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    min-width: 1200px;
+    img{
+        position: relative;
+        left: 50%;
+        margin-left: -960px;
+    }
+}
+
+.list{
+    ul{
+        li{
+            &:nth-of-type(2n-1){
+                margin-right: 60px;
+            }
+            &:hover{
+                transform: translateY(-6px);
+                box-shadow: 0 10px 26px rgba(0,0,0,0.4);
+            }
+            transition: 0.3s;
+            margin-bottom: 20px;
+            float: left;
+            width: 570px;
+            height: 190px;
+            overflow: hidden;
+            background-color: $content-bg;
+            box-sizing: border-box;
+            a{
+                display: block;
+                color: $l-word;
+                i{
+                    color: $blue;
+                    display: inline-block;
+                    margin-right: 8px;
+                }
+                .info{
+                    width: 250px;
+                    margin-right: 8px;
+                    .name{
+                        margin-top: 20px;
+                        font-size: 16px;
+                        height: 80px;
+                        line-height: 1.6;
+                        span{
+                            color: $blue;
+                        }
+                    }
+                    .time{
+                        margin-top: 20px;
+                    }
+                    .num{
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
